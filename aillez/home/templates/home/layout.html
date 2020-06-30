@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block meta %}{% endblock %}
+ 
+    <meta property="og:image" content="{% static 'paginas/img/og-image.png' %}">
+    <link rel="shortcut icon" href="{% static 'paginas/img/favicon.ico' %}">
+
+    <title>{% block title %}{% endblock %}</title>
+    
+    {% block css %}{% endblock %}
+   
+    {% block js %} {% endblock %}
+</head>
+
+<body>
+    <header class="bg-preto">
+       
+    </header>
+
+    <nav class="menu-mobile">
+       
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <footer class="bg-preto">
+       
+    </footer>
+</body>
+
+</html>
