@@ -9,9 +9,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% block meta %}{% endblock %}
- 
-    <meta property="og:image" content="{% static 'paginas/img/og-image.png' %}">
-    <link rel="shortcut icon" href="{% static 'paginas/img/favicon.ico' %}">
+
+
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
 
     <title>{% block title %}{% endblock %}</title>
     
@@ -21,8 +21,24 @@
 </head>
 
 <body>
-    <header class="bg-preto">
-       
+    <header class="header">
+        <img class="header-logo" src="#" alt="Logo Aillez">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="menu-item" href="#">Sobre</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="#">Nossos Serviços</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="#">Estudos de casos</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <nav class="menu-mobile">
