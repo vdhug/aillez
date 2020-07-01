@@ -1,0 +1,1 @@
+sass --watch ./home/static/home/scss/:./home/static/home/css/
