@@ -15,7 +15,7 @@
 
 <section class="home-sobre">
     <div class="sobre-empresa">
-        <h3 class="titulos-label">Sobre nós</h3>
+        <h3 class="titulo-label">Sobre nós</h3>
         <h2>Aillez mantém uma força de trabalho altamente treinada, qualificada e experiente, comprometida com a excelência e a satisfação do cliente.</h2>
         <p>
             Fornecemos soluções de engenharia eficientes e baseadas em valor para a indústria da construção.
@@ -23,48 +23,58 @@
         <p>
             Segurança e inovação estão no centro de tudo o que fazemos, juntamente com uma atitude de "poder fazer" e atenção pessoal às necessidades do cliente.
         </p>
-        <ul class="sobre-menu">
-            <li><a class="sobre-link" href="#">Nossos valores</a></li>
-            <li><a class="sobre-link" href="#">Nossas capacidades</a></li>
+        <ul class="menu">
+            <li><a class="menu-link" href="#">Nossos valores</a></li>
+            <li><a class="menu-link" href="#">Nossas capacidades</a></li>
         </ul>
         <a class="btn" href="#">Mais sobre a empresa</a>
     </div>
 
     <div class="realizacoes">
-        <h3 class="titulos-label">Por que trabalhar conosco</h3>
+        <h3 class="titulo-label">Por que trabalhar conosco</h3>
         <img class="realizacoes-icone" src="#" alt="">
         <h5>Equipe altamente capacitada, capaz de gerar soluçoes alternativas e inovadoras.</h5>
     </div>
 </section>
 
 <section class="home-servicos">
-    <div>
+    <div class="introducao">
         <h1>Nossos serviços</h1>
         <img src="#" alt="">
     </div>
-    <div>
+    <div class="descricao">
         <p>A Aillez está estruturada nas seguintes divisões focadas no cliente; para mais detalhes, clique nos links abaixo:</p>
-        <ul>
+        <ul class="menu">
             <li>
-                <a href="#">Projetos elétricos</a>
+                <a class="menu-link" href="#">Projetos elétricos</a>
             </li>
             <li>
-                <a href="#">Instalaçao de painel solar</a>
+                <a class="menu-link" href="#">Instalaçao de painel solar</a>
             </li>
         </ul>
     </div>
 </section>
 
-<section>
+<section class="estudos-de-caso">
     <div>
         <h1>Dona Helena caso de uso</h1>
-        <label for="#">Trabalho realizado</label>
+        <label class="titulo-label" for="#">Trabalho realizado</label>
         <p>Instalaçao de painel solar</p>
-        <label for="#">Breve descrição</label>
+        <label class="titulo-label" for="#">Breve descrição</label>
         <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
-        <a href="#">Leia mais</a>
+        <a class="btn" href="#">Mais detalhes</a>
     </div>
     <img src="#" alt="">
 </section>
+
+<footer class="footer">
+    <ul class="menu-footer">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Nossos serviços</a></li>
+        <li><a href="#">Estudos de casos</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    <p>© Aillez - Alguns direitos reservados</p>
+</footer>
 
 {% endblock %}

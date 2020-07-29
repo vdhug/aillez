@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   color: #1E1F23;
@@ -7,7 +8,7 @@ body {
   color: #1E1F23;
 }
 
-.titulos-label {
+.titulo-label {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.03rem;
@@ -66,6 +67,15 @@ li {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*:hover {
+  -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -87,6 +97,14 @@ textarea:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* Animações */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .header {
@@ -144,9 +162,58 @@ textarea:focus {
   font-weight: bold;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu-link {
+  font-size: 1.25rem;
+  display: block;
+  padding: 15px 0;
+  position: relative;
+  max-width: 300px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.menu .menu-link::after {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  content: "";
+  margin-left: 60px;
+  border: solid #E9634F;
+  border-width: 0 3px 3px 0;
+  margin-top: 7px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.menu .menu-link:hover {
+  opacity: 0.6;
+  -webkit-animation-name: move;
+  animation-name: move;
+}
+.menu .menu-link:hover::after {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideToRight;
+  animation-name: slideToRight;
+}
+
+@keyframes slideToRight {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -25px;
+  }
+}
 .home-sobre {
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 2fr 2fr;
   grid-column-gap: 20px;
 }
 .home-sobre .sobre-empresa {
@@ -156,31 +223,6 @@ textarea:focus {
   font-size: 1.953rem;
   line-height: 1.2;
   margin: 16px 0 22px;
-}
-.home-sobre .sobre-empresa .sobre-menu {
-  display: flex;
-  flex-direction: column;
-}
-.home-sobre .sobre-empresa .sobre-menu .sobre-link {
-  display: block;
-  padding: 15px 0;
-  position: relative;
-  max-width: 300px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.home-sobre .sobre-empresa .sobre-menu .sobre-link::after {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  content: "";
-  margin-left: 60px;
-  border: solid #E9634F;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 .home-sobre .realizacoes {
   padding: 64px 56px;
@@ -199,6 +241,84 @@ textarea:focus {
   color: #FFF;
   font-size: 1.953rem;
   line-height: 1.2;
+  text-align: center;
+}
+
+.home-servicos {
+  background: #F5F5F5;
+  padding: 64px 56px;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-column-gap: 80px;
+}
+.home-servicos .introducao h1 {
+  font-size: 3.815rem;
+  font-weight: bold;
+  color: #4D4D4D;
+  opacity: 0.2;
+  margin-bottom: 3rem;
+}
+.home-servicos .introducao img {
+  background: grey;
+  min-width: 100%;
+  min-height: 540px;
+}
+.home-servicos .descricao p {
+  margin-top: 2.815rem;
+}
+
+.estudos-de-caso {
+  background: #1E1F23;
+  padding: 64px 56px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-column-gap: 80px;
+}
+.estudos-de-caso div h1 {
+  font-size: 3.815rem;
+  color: #FFF;
+  max-width: 450px;
+  margin-bottom: 4rem;
+}
+.estudos-de-caso div .titulo-label {
+  display: block;
+  color: #FFF;
+  margin-bottom: 0.8rem;
+  opacity: 0.3;
+}
+.estudos-de-caso div p {
+  color: #FFF;
+  margin-bottom: 3.2rem;
+}
+.estudos-de-caso img {
+  background: grey;
+}
+
+.footer {
+  background: #FFF;
+  padding: 1rem;
+  padding: 2rem 56px;
+}
+.footer .menu-footer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.footer .menu-footer li {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: 2.75rem;
+}
+.footer .menu-footer li a {
+  padding: 10px;
+}
+.footer .menu-footer li a:hover {
+  color: #E9634F;
+}
+.footer p {
+  margin-top: 2rem;
   text-align: center;
 }
 

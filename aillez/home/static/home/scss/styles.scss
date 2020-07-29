@@ -54,6 +54,15 @@ li {
     -moz-osx-font-smoothing: grayscale;
 }
 
+*:hover {
+    -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -75,6 +84,14 @@ textarea:focus {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+/* Animações */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .header {
@@ -138,9 +155,66 @@ textarea:focus {
     }
 }
 
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    .menu-link {
+        font-size: 1.25rem;
+        display: block;
+        padding: 15px 0;
+        position: relative;
+        max-width: 300px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .menu-link::after {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        content: "";
+        margin-left: 60px;
+        border: solid $rosa;
+        border-width: 0 3px 3px 0;
+        margin-top: 7px;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .menu-link:hover {
+        opacity: .6;
+        -webkit-animation-name: move; 
+        animation-name: move;
+    }
+
+    .menu-link:hover::after {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: slideToRight; 
+        animation-name: slideToRight;
+    }
+}
+
+@keyframes slideToRight {
+    from {
+      right: 0px;
+    }
+  
+    to {
+        right: -25px;
+    }
+}
+
+
 .home-sobre {
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 2fr 2fr;
     grid-column-gap: 20px;
 
     .sobre-empresa {
@@ -150,34 +224,6 @@ textarea:focus {
             font-size: 1.953rem;
             line-height: 1.2;
             margin: 16px 0 22px;
-        }
-
-        .sobre-menu {
-            display: flex;
-            flex-direction: column;
-
-            .sobre-link {
-                display: block;
-                padding: 15px 0;
-                position: relative;
-                max-width: 300px;
-                margin-bottom: 10px;
-                font-weight: bold;
-            }
-
-            .sobre-link::after {
-                display: inline-block;
-                position: absolute;
-                right: 0;
-                content: "";
-                margin-left: 60px;
-                border: solid $rosa;
-                border-width: 0 2px 2px 0;
-                display: inline-block;
-                padding: 3px;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-            } 
         }
     }
 
@@ -201,5 +247,101 @@ textarea:focus {
             line-height: 1.2;
             text-align: center;
         }
+    }
+}
+
+.home-servicos {
+    background: $background;
+    padding: 64px 56px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-column-gap: 80px;
+
+    .introducao {
+        h1 {
+            font-size: 3.815rem;
+            font-weight: bold;
+            color: $pretoSecundario;
+            opacity: .2;
+            margin-bottom: 3rem;
+        }
+
+        img {
+            background: grey;
+            min-width: 100%;
+            min-height: 540px;
+        }
+    }
+
+    .descricao {
+        p {
+            margin-top: 2.815rem;
+        }
+    }
+}
+
+.estudos-de-caso {
+    background: $pretoPrincipal;
+    padding: 64px 56px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-column-gap: 80px;
+    
+    div {
+        h1 {
+            font-size: 3.815rem;
+            color: $branco;
+            max-width: 450px;
+            margin-bottom: 4rem;
+        }
+
+        .titulo-label {
+            display: block;
+            color: $branco;
+            margin-bottom: .8rem;
+            opacity: .3;
+        }
+
+        p {
+            color: $branco;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    img {
+        background: grey;
+    }
+}
+
+.footer {
+    background: $branco;
+    padding: 1rem;
+    padding: 2rem 56px;
+    
+    .menu-footer {
+        width: 100%;
+        display: flex;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+        justify-content: center;
+
+        li {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-right: 2.75rem;
+
+            a {
+                padding: 10px;
+            }
+
+            a:hover {
+                color: $rosa;
+            }
+        }
+    }
+
+    p {
+        margin-top: 2rem;
+        text-align: center;
     }
 }
