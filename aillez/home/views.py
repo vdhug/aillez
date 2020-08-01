@@ -8,3 +8,7 @@ def index(request):
 
 def sobre(request):
     return render(request, "sobre/sobre.html")
+
+
+def servicos(request):
+    return render(request, "servicos/servicos.html")
