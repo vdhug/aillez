@@ -218,7 +218,7 @@ textarea:focus {
     grid-column-gap: 20px;
 
     .sobre-empresa {
-        padding: 64px 56px;
+        padding: 4rem 3.5rem;
 
         h2 {
             font-size: 1.953rem;
@@ -228,7 +228,7 @@ textarea:focus {
     }
 
     .realizacoes {
-        padding: 64px 56px;
+        padding: 4rem 3.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -252,7 +252,7 @@ textarea:focus {
 
 .home-servicos {
     background: $background;
-    padding: 64px 56px;
+    padding: 4rem 3.5rem;
     display: grid;
     grid-template-columns: 6fr 4fr;
     grid-column-gap: 80px;
@@ -282,7 +282,7 @@ textarea:focus {
 
 .estudos-de-caso {
     background: $pretoPrincipal;
-    padding: 64px 56px;
+    padding: 4rem 3.5rem;
     display: grid;
     grid-template-columns: 4fr 6fr;
     grid-column-gap: 80px;
@@ -316,7 +316,7 @@ textarea:focus {
 .footer {
     background: $branco;
     padding: 1rem;
-    padding: 2rem 56px;
+    padding: 2rem 3.5rem;
     
     .menu-footer {
         width: 100%;

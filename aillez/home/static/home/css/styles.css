@@ -217,7 +217,7 @@ textarea:focus {
   grid-column-gap: 20px;
 }
 .home-sobre .sobre-empresa {
-  padding: 64px 56px;
+  padding: 4rem 3.5rem;
 }
 .home-sobre .sobre-empresa h2 {
   font-size: 1.953rem;
@@ -225,7 +225,7 @@ textarea:focus {
   margin: 16px 0 22px;
 }
 .home-sobre .realizacoes {
-  padding: 64px 56px;
+  padding: 4rem 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,7 +246,7 @@ textarea:focus {
 
 .home-servicos {
   background: #F5F5F5;
-  padding: 64px 56px;
+  padding: 4rem 3.5rem;
   display: grid;
   grid-template-columns: 6fr 4fr;
   grid-column-gap: 80px;
@@ -269,7 +269,7 @@ textarea:focus {
 
 .estudos-de-caso {
   background: #1E1F23;
-  padding: 64px 56px;
+  padding: 4rem 3.5rem;
   display: grid;
   grid-template-columns: 4fr 6fr;
   grid-column-gap: 80px;
@@ -297,7 +297,7 @@ textarea:focus {
 .footer {
   background: #FFF;
   padding: 1rem;
-  padding: 2rem 56px;
+  padding: 2rem 3.5rem;
 }
 .footer .menu-footer {
   width: 100%;
