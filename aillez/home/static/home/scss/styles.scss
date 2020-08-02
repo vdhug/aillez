@@ -147,11 +147,13 @@ textarea:focus {
     color: $branco;
 
     .titulo {
-        font-size: 3.052rem;
+        font-size: 4.668rem;
         text-align: center;
         margin: 0 auto;
-        max-width: 700px;
+        max-width: 800px;
         font-weight: bold;
+        color: $branco;
+        opacity: .8;
     }
 }
 
