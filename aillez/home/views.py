@@ -12,3 +12,7 @@ def sobre(request):
 
 def servicos(request):
     return render(request, "servicos/servicos.html")
+
+
+def contato(request):
+    return render(request, "contato/contato.html")

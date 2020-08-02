@@ -511,4 +511,127 @@ body {
   background: grey;
 }
 
+body {
+  color: #1E1F23;
+}
+
+.contato-interna .contato {
+  padding: 4rem 3.5rem;
+  background: #F5F5F5;
+  display: grid;
+  grid-template: "subtitulo imagem" "titulo imagem"/1fr 1fr;
+}
+.contato-interna .contato h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2rem;
+  grid-area: subtitulo;
+}
+.contato-interna .contato h2 {
+  font-size: 4.768rem;
+  opacity: 0.6;
+  font-weight: bold;
+  grid-area: titulo;
+  margin-bottom: 3rem;
+}
+.contato-interna .contato img {
+  background: red;
+  grid-area: imagem;
+}
+.contato-interna .contato .contato-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contato-interna .contato .contato-info .label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0.7;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+.contato-interna .contato .contato-info .label-email {
+  margin-top: 2.5rem;
+}
+.contato-interna .contato .contato-info .contato-endereco p {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.contato-interna .contato .contato-info .contato-detalhes p a {
+  font-size: 1.563rem;
+}
+.contato-interna .contato-formulario {
+  background: #1E1F23;
+  padding: 4rem 14rem;
+  display: grid;
+  grid-template: "subtitulo subtitulo" "titulo titulo" "label label" "nome nome" "telefone email" "mensagem mensagem"/1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.contato-interna .contato-formulario h3 {
+  text-align: center;
+  margin-bottom: 3.7rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  color: #FFF;
+  opacity: 0.6;
+  font-weight: bold;
+  grid-area: subtitulo;
+}
+.contato-interna .contato-formulario p {
+  margin-bottom: 3.7rem;
+  font-size: 1.953rem;
+  letter-spacing: 0.005rem;
+  color: #FFF;
+  opacity: 0.8;
+  max-width: 600px;
+  line-height: 1.2;
+  grid-area: titulo;
+}
+.contato-interna .contato-formulario .label {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  opacity: 0.6;
+  display: block;
+  grid-area: label;
+}
+.contato-interna .contato-formulario input, .contato-interna .contato-formulario textarea {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 2rem;
+  border-width: 0;
+  max-width: 100%;
+  outline: 0;
+  padding: 1.2rem 2.2rem;
+  text-align: left;
+  width: 100%;
+  font-size: 1.25rem;
+  color: #FFF;
+}
+.contato-interna .contato-formulario .nome {
+  grid-area: nome;
+}
+.contato-interna .contato-formulario .telefone {
+  grid-area: telefone;
+}
+.contato-interna .contato-formulario .email {
+  grid-area: email;
+}
+.contato-interna .contato-formulario .mensagem {
+  grid-area: mensagem;
+}
+.contato-interna .contato-formulario .btn {
+  width: fit-content;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

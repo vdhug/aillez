@@ -1,0 +1,152 @@
+@import "cores";
+
+.contato-interna  {
+    .contato {
+        padding: 4rem 3.5rem;
+        background: $background;
+        display: grid;
+        grid-template: 
+        "subtitulo imagem"
+        "titulo imagem" / 1fr 1fr;
+        h3 {
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: .15rem;
+            margin-bottom: 2rem;
+            grid-area: subtitulo;
+        }
+
+        h2 {
+            font-size: 4.768rem;
+            opacity: .6;
+            font-weight: bold;
+            grid-area: titulo;
+            margin-bottom: 3rem;
+        }
+
+        img {
+            background: red;
+            grid-area: imagem;
+        }
+        .contato-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .label {
+                display: block;
+                font-size: .7rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                opacity: .7;
+                letter-spacing: .15rem;
+                margin-bottom: 1rem;   
+            }
+
+            .label-email {
+                margin-top: 2.5rem;
+            }
+
+            .contato-endereco {
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: .2rem;
+                    font-weight: bold;
+                    opacity: .9;
+                }
+            }
+
+            .contato-detalhes {
+                p {
+                    a {
+                        font-size: 1.563rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contato-formulario {
+        background: $pretoPrincipal;
+        padding: 4rem 14rem;
+        display: grid;
+        grid-template: 
+        "subtitulo subtitulo"
+        "titulo titulo"
+        "label label"
+        "nome nome"
+        "telefone email"
+        "mensagem mensagem" / 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 3.7rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: .2rem;
+            color: $branco;
+            opacity: .6;
+            font-weight: bold;
+            grid-area: subtitulo;
+        }
+
+        p {
+            margin-bottom: 3.7rem;
+            font-size: 1.953rem;
+            letter-spacing: .005rem;
+            color: $branco;
+            opacity: .8;
+            max-width: 600px;
+            line-height: 1.2;
+            grid-area: titulo;
+        }
+
+        .label {
+            color: $branco;
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: .15rem;
+            font-weight: bold;
+            opacity: .6;
+            display: block;
+            grid-area: label;
+        }
+
+        input, textarea {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 2rem;
+            border-width: 0;
+            max-width: 100%;
+            outline: 0;
+            padding: 1.2rem 2.2rem;
+            text-align: left;
+            width: 100%;
+            font-size: 1.25rem;
+            color: $branco;
+        }
+        .nome {
+            grid-area: nome;
+        }
+
+        .telefone {
+            grid-area: telefone;
+        }
+
+        .email {
+            grid-area: email;
+        }
+
+        .mensagem {
+            grid-area: mensagem;
+        }
+
+        .btn {
+            width: fit-content;
+            font-size: 1rem;
+            letter-spacing: .2rem;
+        }
+    }
+}

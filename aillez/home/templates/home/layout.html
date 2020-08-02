@@ -22,20 +22,20 @@
 
 <body>
     <header class="header">
-        <a href="/"><img class="header-logo" src="#" alt="Logo Aillez"></a>
+        <a href="{% url 'index' %}"><img class="header-logo" src="#" alt="Logo Aillez"></a>
         <nav class="menu">
             <ul>
                 <li>
-                    <a class="menu-item" href="#">Sobre</a>
+                    <a class="menu-item" href="{% url 'sobre' %}">Sobre</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="#">Nossos Serviços</a>
+                    <a class="menu-item" href="{% url 'servicos' %}">Nossos Serviços</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="#">Estudos de casos</a>
+                    <a class="menu-item" href="{% url 'sobre' %}">Estudos de casos</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="#">Contato</a>
+                    <a class="menu-item" href="{% url 'contato' %}">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -52,10 +52,10 @@
 
     <footer class="footer">
         <ul class="menu-footer">
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Nossos serviços</a></li>
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+            <li><a href="{% url 'servicos' %}">Nossos serviços</a></li>
             <li><a href="#">Estudos de casos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="{% url 'contato' %}">Contato</a></li>
         </ul>
         <p>© Aillez - Alguns direitos reservados</p>
     </footer>

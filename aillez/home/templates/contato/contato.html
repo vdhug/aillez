@@ -1,0 +1,48 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Aillez Engenharia - Entre em contato conosco.
+{% endblock %}
+
+
+{% block content %}
+
+<section class="contato-interna">
+    <div class="contato">
+        <h3>Nosso escritorio</h3>
+        <h2>Senador Guiomard</h2>
+        <div class="contato-info">
+            <div class="contato-endereco">
+                <label class="label" for="">Endereco</label>
+                <p>Pio XII</p>
+                <p>Jardim Botanico</p>
+                <p>69.925-000</p>
+                <p>2332</p>
+            </div>
+            <div class="contato-detalhes">
+                <label class="label" for="">Telefone</label>
+                <p><a href="#">(68) 99999-9999</a></p>
+    
+                <label class="label label-email" for="">Endereço de email</label>
+                <p><a href="#">contato@aillez.com</a></p>
+            </div>
+        </div>
+        
+        <img src="#" alt="">
+
+    </div>
+
+    <form class="contato-formulario" action="">
+        <h3>Formulário geral de contato</h3>
+        <p>Preencha o seguinte formulário para nos mandar uma mensagem</p>
+        <label class="label" for="">Seus detalhes</label>
+        <input class="nome" type="text" name="nome" id="nome" placeholder="Nome completo">
+        <input class="telefone" type="tel" name="telefone" id="telefone" placeholder="Número de telefone">
+        <input class="email" type="email" name="email" id="email" placeholder="Endereço de email">
+        <textarea class="mensagem" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Por favor escreva sua mensagem aqui..."></textarea>
+        <a class="btn" href="#">Enviar</a>
+    </form>
+</section>
+
+{% endblock %}
