@@ -7,7 +7,8 @@
         display: grid;
         grid-template: 
         "subtitulo imagem"
-        "titulo imagem" / 1fr 1fr;
+        "titulo imagem" 
+        "info imagem"/ 1fr 1fr;
         h3 {
             font-size: .8rem;
             text-transform: uppercase;
@@ -30,6 +31,7 @@
             grid-area: imagem;
         }
         .contato-info {
+            grid-area: info;
             display: grid;
             grid-template-columns: 1fr 1fr;
 

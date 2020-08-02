@@ -519,7 +519,7 @@ body {
   padding: 4rem 3.5rem;
   background: #F5F5F5;
   display: grid;
-  grid-template: "subtitulo imagem" "titulo imagem"/1fr 1fr;
+  grid-template: "subtitulo imagem" "titulo imagem" "info imagem"/1fr 1fr;
 }
 .contato-interna .contato h3 {
   font-size: 0.8rem;
@@ -541,6 +541,7 @@ body {
   grid-area: imagem;
 }
 .contato-interna .contato .contato-info {
+  grid-area: info;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
