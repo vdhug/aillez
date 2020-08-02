@@ -401,4 +401,112 @@ body {
   font-weight: normal;
 }
 
+body {
+  color: #1E1F23;
+}
+
+.servicos-interna {
+  display: flex;
+  flex-direction: column;
+}
+.servicos-interna .servicos-intro {
+  background: #1E1F23;
+  padding: 4rem 3.5rem;
+}
+.servicos-interna .servicos-intro h2 {
+  font-size: 4.768rem;
+  color: #FFF;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  opacity: 0.8;
+}
+.servicos-interna .servicos-intro p {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  color: #FFF;
+  opacity: 0.5;
+}
+.servicos-interna .servicos-intro a {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  color: #E9634F;
+  letter-spacing: 0.18rem;
+}
+.servicos-interna .servicos-intro a::after {
+  display: inline-block;
+  content: "";
+  margin-left: 20px;
+  border: solid #E9634F;
+  border-width: 0 2px 2px 0;
+  margin-bottom: 3px;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.servicos-interna .servicos-intro a:hover {
+  opacity: 0.7;
+}
+.servicos-interna .servicos-lista {
+  background: #F5F5F5;
+  padding: 4rem 3.5rem;
+}
+.servicos-interna .servicos-lista .titulo {
+  font-size: 1rem;
+  color: #1E1F23;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.servicos-interna .servicos-lista ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.servicos-interna .servicos-lista ul .servico {
+  display: grid;
+  grid-template: "esquerda direita"/1fr 1fr;
+}
+.servicos-interna .servicos-lista ul .servico .servico-descricao {
+  grid-area: esquerda;
+  background: #FFF;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 7rem;
+}
+.servicos-interna .servicos-lista ul .servico .servico-descricao h3 {
+  font-size: 1.953rem;
+  margin-bottom: 1.5rem;
+}
+.servicos-interna .servicos-lista ul .servico .servico-descricao p {
+  max-width: 400px;
+}
+.servicos-interna .servicos-lista ul .servico .servico-descricao .btn {
+  display: inline-block;
+  background: transparent;
+  border: 3px solid #E9634F;
+  color: #E9634F;
+  font-weight: bold;
+}
+.servicos-interna .servicos-lista ul .servico img {
+  grid-area: direita;
+  min-width: 600px;
+  min-height: 600px;
+  background: grey;
+}
+.servicos-interna .servicos-lista ul li:nth-child(2) .servico-descricao {
+  grid-area: direita;
+}
+.servicos-interna .servicos-lista ul li:nth-child(2) img {
+  grid-area: esquerda;
+  background: grey;
+}
+
 /*# sourceMappingURL=styles.css.map */

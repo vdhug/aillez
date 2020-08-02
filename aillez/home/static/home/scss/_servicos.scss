@@ -1,0 +1,125 @@
+@import "cores";
+
+.servicos-interna {
+    display: flex;
+    flex-direction: column;
+
+    .servicos-intro {
+        background: $pretoPrincipal;
+        padding: 4rem 3.5rem;
+        
+
+        h2 {
+            font-size: 4.768rem;
+            color: $branco;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            opacity: .8;
+        }
+
+        p {
+            max-width: 500px;
+            margin-bottom: 1rem;
+            color: $branco;
+            opacity: .5;
+        }
+
+        a {
+            display: block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            margin-top: 4rem;
+            color: $rosa;
+            letter-spacing: .18rem;
+        }
+
+        a::after {
+            display: inline-block;
+            content: "";
+            margin-left: 20px;
+            border: solid $rosa;
+            border-width: 0 2px 2px 0;
+            margin-bottom: 3px;
+            display: inline-block;
+            padding: 2px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }
+
+    .servicos-lista {
+        background: $background;
+        padding: 4rem 3.5rem;
+
+        .titulo {
+            font-size: 1rem;
+            color: $pretoPrincipal;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4rem;
+
+            .servico {
+                display: grid;
+                grid-template: "esquerda direita" / 1fr 1fr;
+
+                .servico-descricao {
+                    grid-area: esquerda;
+                    background: $branco;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0 7rem;
+
+                    h3 {
+                        font-size: 1.953rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p {
+                        max-width: 400px;
+                    }
+
+                    .btn {
+                        display: inline-block;
+                        background: transparent;
+                        border: 3px solid $rosa;
+                        color: $rosa;
+                        font-weight: bold;
+                    }
+                }
+
+                img {
+                    grid-area: direita;
+                    min-width: 600px;
+                    min-height: 600px;
+                    background: grey;
+                }
+            }
+
+            li:nth-child(2) {
+                .servico-descricao {
+                    grid-area: direita;
+                }
+
+                img {
+                    grid-area: esquerda;
+                    background: grey;
+                }
+            }
+        }
+    }
+}
