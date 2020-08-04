@@ -635,4 +635,146 @@ body {
   letter-spacing: 0.2rem;
 }
 
+body {
+  color: #1E1F23;
+}
+
+.estudos-de-caso-interna {
+  display: grid;
+  grid-template: "titulo filtro-label" "titulo filtro-selecao" "estudos estudos"/1fr 1fr;
+  background: #F5F5F5;
+  padding: 7rem 3.5rem;
+}
+.estudos-de-caso-interna h1 {
+  grid-area: titulo;
+  font-size: 4.768rem;
+  font-weight: bold;
+  color: #4D4D4D;
+  opacity: 0.9;
+  line-height: 1;
+}
+.estudos-de-caso-interna label {
+  grid-area: filtro-label;
+  display: flex;
+  align-items: flex-end;
+  justify-self: end;
+}
+.estudos-de-caso-interna .titulo-label {
+  margin-bottom: 1rem;
+  margin-right: 82px;
+}
+.estudos-de-caso-interna .custom-select {
+  grid-area: filtro-selecao;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: #1E1F23;
+  position: relative;
+  border-radius: 2rem;
+  border-width: 0;
+  width: 350px;
+  outline: 0;
+  padding: 1.2rem 2.2rem;
+  text-align: left;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  align-self: baseline;
+  justify-self: end;
+  font-weight: bold;
+  color: #FFF;
+  position: relative;
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.estudos-de-caso-interna .custom-select select {
+  display: none;
+}
+.estudos-de-caso-interna .custom-select .select-selected {
+  width: 100%;
+  font-size: 1.25rem;
+  color: #FFF;
+}
+.estudos-de-caso-interna .custom-select .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 37px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #FFF transparent transparent transparent;
+}
+.estudos-de-caso-interna .custom-select .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 30px;
+}
+.estudos-de-caso-interna .custom-select .select-items div, .estudos-de-caso-interna .custom-select .select-selected {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.estudos-de-caso-interna .custom-select .select-items {
+  position: absolute;
+  background-color: #1E1F23;
+  top: 65%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: #1E1F23;
+  border-width: 0;
+  outline: 0;
+  align-self: baseline;
+  justify-self: end;
+  font-weight: bold;
+}
+.estudos-de-caso-interna .custom-select .select-items div {
+  width: 100%;
+  padding: 2.2rem 3.2rem;
+  text-align: left;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+.estudos-de-caso-interna .custom-select .select-items :first-child {
+  margin-top: 30px;
+}
+.estudos-de-caso-interna .custom-select .select-hide {
+  display: none;
+}
+.estudos-de-caso-interna .custom-select .select-items div:hover, .estudos-de-caso-interna .custom-select .same-as-selected {
+  background-color: #4D4D4D;
+}
+.estudos-de-caso-interna .estudos {
+  grid-area: estudos;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 4rem;
+}
+.estudos-de-caso-interna .estudos .estudo-imagem {
+  height: 350px;
+  background: gray;
+}
+.estudos-de-caso-interna .estudos .estudo-descricao {
+  background: #FFF;
+  padding: 2rem 3rem;
+}
+.estudos-de-caso-interna .estudos .estudo-descricao h3 {
+  font-size: 2.441rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.estudos-de-caso-interna .estudos .estudo-descricao .titulo-label {
+  margin-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

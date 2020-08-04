@@ -1,0 +1,69 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Aillez Engenharia - Estudos de caso
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'home/js/select.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<section class="estudos-de-caso-interna">
+    <h1>Nossos melhores e mais orgulhosos trabalhos.</h1>
+    <label class="titulo-label" for="">Filtrar casos de uso por:</label>
+    <div class="custom-select">
+        <select name="categorias" id="categorias">
+            <option value="solar">Energias renovaveis</option>
+            <option value="teste">Energias renovaveis</option>
+            <option value="1">Energias renovaveis</option>
+        </select>
+    </div>
+
+    <ul class="estudos">
+        <li>
+            <div>
+                <div class="estudo-imagem"></div>
+                <div class="estudo-descricao">
+                    <h3>Dona Helena caso de uso</h3>
+                    <label class="titulo-label" for="#">Trabalho realizado</label>
+                    <p>Instalaçao de painel solar</p>
+                    <label class="titulo-label" for="#">Breve descrição</label>
+                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
+                    <a class="btn" href="#">Mais detalhes</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="estudo-imagem"></div>
+                <div class="estudo-descricao">
+                    <h3>Dona Helena caso de uso</h3>
+                    <label class="titulo-label" for="#">Trabalho realizado</label>
+                    <p>Instalaçao de painel solar</p>
+                    <label class="titulo-label" for="#">Breve descrição</label>
+                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
+                    <a class="btn" href="#">Mais detalhes</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="estudo-imagem"></div>
+                <div class="estudo-descricao">
+                    <h3>Dona Helena caso de uso</h3>
+                    <label class="titulo-label" for="#">Trabalho realizado</label>
+                    <p>Instalaçao de painel solar</p>
+                    <label class="titulo-label" for="#">Breve descrição</label>
+                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
+                    <a class="btn" href="#">Mais detalhes</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+{% endblock %}
