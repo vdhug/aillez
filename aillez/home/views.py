@@ -14,6 +14,10 @@ def servicos(request):
     return render(request, "servicos/servicos.html")
 
 
+def servico(request, slug):
+    return render(request, "servicos/servico.html")
+
+
 def contato(request):
     return render(request, "contato/contato.html")
 

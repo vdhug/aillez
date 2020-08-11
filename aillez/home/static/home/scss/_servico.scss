@@ -1,0 +1,116 @@
+@import "cores";
+
+.servico {
+    background: $background;
+
+    .servico-intro {
+        padding: 4rem 3.5rem;
+        display: grid;
+        grid-template: "servicoTitulo servicoImagem"
+        "servicoSubtitulo servicoImagem"
+        "servicoDescricao ."
+        "servicoEtapas ." 
+        "servicoContato ." / 1fr 1fr;
+        column-gap: 60px;
+        h1 {
+            font-size: 4.768rem;
+            font-weight: bold;
+            grid-area: servicoTitulo;
+            color: #4D4D4D;
+            opacity: 0.9;
+            line-height: 1;
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            grid-area: servicoSubtitulo;
+            font-size: 2.441rem;
+            color: $pretoPrincipal;
+            margin-bottom: 2rem;
+        }
+        
+        p {
+            grid-area: servicoDescricao;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            grid-area: servicoEtapas;
+            list-style: none;
+
+            li {
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: $pretoPrincipal;
+                font-weight: bold;
+                opacity: .8;
+            }
+
+            li::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background: $rosa;
+                display: inline-block;
+                border-radius: 50%;
+                margin-left: -1rem;
+                margin-right: 1rem;
+                margin-bottom: 2px;
+                // content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                // color: $rosa; /* Change the color */
+                // font-weight: bold; /* If you want it to be bold */
+                // display: inline-block; /* Needed to add space between the bullet and the text */
+                // width: 1rem; /* Also needed for space (tweak if needed) */
+                // margin-left: -1rem; /* Also needed for space (tweak if needed) */
+            }
+
+        }
+
+        .btn {
+            grid-area: servicoContato;
+            width: fit-content;
+        }
+
+        img {
+            grid-area: servicoImagem;
+            background: red;
+        }
+    }
+
+    .servico-quote {
+        padding: 0rem 3.5rem;
+        background: $pretoSecundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h3 {
+            color: $branco;
+            padding-top: 2rem;
+            opacity: .6;
+            letter-spacing: .15rem;
+            text-transform: uppercase;
+            padding-bottom: 8rem;
+        }
+
+        cite {
+            max-width: 1040px;
+            font-size: 1.563em;
+            color: $branco;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $rosa;
+            font-size: 1.25rem;
+            margin-bottom: 10rem;
+        }
+    }
+}

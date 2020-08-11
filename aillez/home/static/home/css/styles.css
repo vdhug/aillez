@@ -515,6 +515,102 @@ body {
   color: #1E1F23;
 }
 
+.servico {
+  background: #F5F5F5;
+}
+.servico .servico-intro {
+  padding: 4rem 3.5rem;
+  display: grid;
+  grid-template: "servicoTitulo servicoImagem" "servicoSubtitulo servicoImagem" "servicoDescricao ." "servicoEtapas ." "servicoContato ."/1fr 1fr;
+  column-gap: 60px;
+}
+.servico .servico-intro h1 {
+  font-size: 4.768rem;
+  font-weight: bold;
+  grid-area: servicoTitulo;
+  color: #4D4D4D;
+  opacity: 0.9;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.servico .servico-intro h3 {
+  grid-area: servicoSubtitulo;
+  font-size: 2.441rem;
+  color: #1E1F23;
+  margin-bottom: 2rem;
+}
+.servico .servico-intro p {
+  grid-area: servicoDescricao;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.servico .servico-intro ul {
+  grid-area: servicoEtapas;
+  list-style: none;
+}
+.servico .servico-intro ul li {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #1E1F23;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.servico .servico-intro ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #E9634F;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: -1rem;
+  margin-right: 1rem;
+  margin-bottom: 2px;
+}
+.servico .servico-intro .btn {
+  grid-area: servicoContato;
+  width: fit-content;
+}
+.servico .servico-intro img {
+  grid-area: servicoImagem;
+  background: red;
+}
+.servico .servico-quote {
+  padding: 0rem 3.5rem;
+  background: #4D4D4D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.servico .servico-quote h3 {
+  color: #FFF;
+  padding-top: 2rem;
+  opacity: 0.6;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  padding-bottom: 8rem;
+}
+.servico .servico-quote cite {
+  max-width: 1040px;
+  font-size: 1.563em;
+  color: #FFF;
+  font-style: normal;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.servico .servico-quote p {
+  color: #E9634F;
+  font-size: 1.25rem;
+  margin-bottom: 10rem;
+}
+
+body {
+  color: #1E1F23;
+}
+
 .contato-interna .contato {
   padding: 4rem 3.5rem;
   background: #F5F5F5;
