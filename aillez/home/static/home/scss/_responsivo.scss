@@ -1,0 +1,88 @@
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .home-intro {
+        .titulo {
+            font-size: 3.815rem;
+        }
+    }
+
+    .btn {
+        padding: 25px 20px;
+    }
+
+    .home-sobre {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-servicos {
+        display: flex;
+        flex-direction: column;
+
+        .introducao {
+            h1 {
+                margin-bottom: 1rem;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .estudos-de-caso {
+        display: flex;
+        flex-direction: column;
+        div {
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .sobre-interna {
+        .sobre-descricao {
+            padding: 3rem 2rem;
+        }
+        .sobre-valor {
+            padding: 0 2rem;
+        }
+        .sobre-visao-geral ul li span {
+            text-align: center;
+        }
+    } 
+
+    .servicos-interna .servicos-lista ul .servico {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .estudos-de-caso-interna {
+        display: flex;
+        flex-direction: column;
+
+        .estudos {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .contato-interna .contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-interna .contato-formulario {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 4rem;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 767px) {
+
+}

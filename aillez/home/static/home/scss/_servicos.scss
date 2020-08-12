@@ -82,7 +82,7 @@
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    padding: 0 7rem;
+                    padding: 6rem 7rem;
 
                     h3 {
                         font-size: 1.953rem;
@@ -104,8 +104,6 @@
 
                 img {
                     grid-area: direita;
-                    min-width: 600px;
-                    min-height: 600px;
                     background: grey;
                 }
             }
