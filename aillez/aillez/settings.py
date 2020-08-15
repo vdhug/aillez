@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'e%rny%&ltm0rk4)%!-$##%3ndw@knf5k4n^nx3z+lvh6y6vkhz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['li2069-176.members.linode.com']
+ALLOWED_HOSTS = ["li2069-176.members.linode.com"]
 
 
 # Application definition
