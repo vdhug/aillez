@@ -43,6 +43,16 @@ a {
     color: $pretoPrincipal;
 }
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
 li {
     list-style: none;
 }
@@ -97,7 +107,7 @@ textarea:focus {
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px;
+    padding: 0px 1.5rem;
 
     .header-logo {
         display: block;

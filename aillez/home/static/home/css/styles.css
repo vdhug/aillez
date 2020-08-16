@@ -56,6 +56,16 @@ a {
   color: #1E1F23;
 }
 
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
 li {
   list-style: none;
 }
@@ -110,7 +120,7 @@ textarea:focus {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0px 20px;
+  padding: 0px 1.5rem;
 }
 .header .header-logo {
   display: block;
@@ -876,6 +886,11 @@ body {
     font-size: 3.815rem;
   }
 
+  .menu ul .menu-item {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
   .btn {
     padding: 25px 20px;
   }
@@ -918,10 +933,18 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .servicos-interna .servicos-lista ul .servico .servico-descricao {
+    padding: 3rem 7rem;
+  }
+
+  .servicos-interna .servicos-lista ul li {
+    margin-bottom: 2rem;
+  }
 
   .estudos-de-caso-interna {
     display: flex;
     flex-direction: column;
+    padding: 3.5rem 3.5rem;
   }
   .estudos-de-caso-interna .estudos {
     display: flex;
@@ -940,6 +963,14 @@ body {
     display: flex;
     flex-direction: column;
     padding: 4rem 4rem;
+  }
+
+  .footer {
+    padding: 1rem 1.5rem;
+  }
+  .footer .menu-footer li a {
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
 

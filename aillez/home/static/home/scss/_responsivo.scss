@@ -6,6 +6,15 @@
         }
     }
 
+    .menu {
+        ul {
+            .menu-item {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        } 
+    } 
+
     .btn {
         padding: 25px 20px;
     }
@@ -54,11 +63,20 @@
     .servicos-interna .servicos-lista ul .servico {
         display: flex;
         flex-direction: column;
+
+        .servico-descricao {
+            padding: 3rem 7rem;
+        }
+    }
+
+    .servicos-interna .servicos-lista ul li {
+        margin-bottom: 2rem;
     }
 
     .estudos-de-caso-interna {
         display: flex;
         flex-direction: column;
+        padding: 3.5rem 3.5rem;
 
         .estudos {
             display: flex;
@@ -79,6 +97,14 @@
         display: flex;
         flex-direction: column;
         padding: 4rem 4rem;
+    }
+
+    .footer {
+        padding: 1rem 1.5rem;
+        .menu-footer li a {
+            padding: 1rem;
+            font-size: 1rem;
+        }
     }
 }
 
