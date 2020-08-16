@@ -12,6 +12,7 @@
 
 
     <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
+    <script src="{% static 'home/js/main.js' %}"></script>
 
     <title>{% block title %}{% endblock %}</title>
     
@@ -22,6 +23,9 @@
 
 <body>
     <header class="header">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>
+        </div>
         <a href="{% url 'index' %}"><img class="header-logo" src="#" alt="Logo Aillez"></a>
         <nav class="menu">
             <ul>
@@ -42,7 +46,20 @@
     </header>
 
     <nav class="menu-mobile">
-       
+        <ul>
+            <li>
+                <a class="menu-item" href="{% url 'sobre' %}">Sobre</a>
+            </li>
+            <li>
+                <a class="menu-item" href="{% url 'servicos' %}">Nossos Serviços</a>
+            </li>
+            <li>
+                <a class="menu-item" href="{% url 'estudos-de-caso' %}">Estudos de casos</a>
+            </li>
+            <li>
+                <a class="menu-item" href="{% url 'contato' %}">Contato</a>
+            </li>
+        </ul>
     </nav>
 
     <main>

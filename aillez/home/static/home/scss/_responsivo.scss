@@ -121,4 +121,58 @@
     .btn {
         padding: 1.5rem;
     }
+
+    .header {
+        height: 100px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .menu-wrapper {
+        display: block;
+    }
+
+    .menu {
+    display: none;
+    }
+    
+    .menu-mobile.active {
+    display: block;
+    opacity: 1;
+    }
+
+    .menu-mobile {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        margin-top: 100px;
+        height: calc(100vh - 100px);
+        z-index: 2;
+        background: $pretoPrincipal;
+        width: 100vw;
+    
+        ul {
+          max-width: 300px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+    
+          padding: 40px 34px 0px 0px;
+    
+          li {
+            text-align: right;
+            margin-top: .8rem;
+
+            .menu-item {
+                display: block;
+                color: $branco;
+                padding-top: calc(0.56818vw + 8.18182px);
+                padding-bottom: calc(0.56818vw + 8.18182px);
+                font-size: calc(3.18182vw + 21.81818px);
+                text-transform: capitalize;
+            }
+          }
+        }
+    }
 }

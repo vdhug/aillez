@@ -1,3 +1,5 @@
+@import "cores";
+
 $bar-width: 70px;
 $bar-height: 5px;
 $bar-spacing: 20px;
@@ -8,9 +10,6 @@ $bar-spacing: 20px;
 }
 
 .menu-wrapper {
-    position: absolute;
-    top: 60px;
-    right: 10px;
     margin: auto;
     width: $bar-width;
     height: $bar-height + $bar-spacing*2;
@@ -32,7 +31,7 @@ $bar-spacing: 20px;
 .hamburger-menu {
     position: relative;
     transform: translateY($bar-spacing);
-    background: rgba(255, 255, 255, 1);
+    background: $pretoPrincipal;
     transition: all 0ms 300ms;
 
     &.animate {
@@ -45,7 +44,7 @@ $bar-spacing: 20px;
     position: absolute;
     left: 0;
     bottom: $bar-spacing;
-    background: rgba(255, 255, 255, 1);
+    background: $pretoPrincipal;
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -54,7 +53,7 @@ $bar-spacing: 20px;
     position: absolute;
     left: 0;
     top: $bar-spacing;
-    background: rgba(255, 255, 255, 1);
+    background: $pretoPrincipal;
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 

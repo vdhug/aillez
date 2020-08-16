@@ -403,14 +403,15 @@ body {
   font-weight: normal;
 }
 
+body {
+  color: #1E1F23;
+}
+
 .menu-mobile {
   display: none;
 }
 
 .menu-wrapper {
-  position: absolute;
-  top: 60px;
-  right: 10px;
   margin: auto;
   width: 70px;
   height: 45px;
@@ -431,7 +432,7 @@ body {
 .hamburger-menu {
   position: relative;
   transform: translateY(20px);
-  background: white;
+  background: #1E1F23;
   transition: all 0ms 300ms;
 }
 .hamburger-menu.animate {
@@ -443,7 +444,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 20px;
-  background: white;
+  background: #1E1F23;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -452,7 +453,7 @@ body {
   position: absolute;
   left: 0;
   top: 20px;
-  background: white;
+  background: #1E1F23;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -1048,6 +1049,56 @@ body {
 
   .btn {
     padding: 1.5rem;
+  }
+
+  .header {
+    height: 100px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .menu-wrapper {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .menu-mobile {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+    z-index: 2;
+    background: #1E1F23;
+    width: 100vw;
+  }
+  .menu-mobile ul {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 34px 0px 0px;
+  }
+  .menu-mobile ul li {
+    text-align: right;
+    margin-top: 0.8rem;
+  }
+  .menu-mobile ul li .menu-item {
+    display: block;
+    color: #FFF;
+    padding-top: calc(0.56818vw + 8.18182px);
+    padding-bottom: calc(0.56818vw + 8.18182px);
+    font-size: calc(3.18182vw + 21.81818px);
+    text-transform: capitalize;
   }
 }
 
