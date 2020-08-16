@@ -104,17 +104,6 @@ textarea:focus {
     animation-fill-mode: both;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 1.5rem;
-
-    .header-logo {
-        display: block;
-        padding: 25px 33px;
-    }
-}
-
 .btn {
     color: $branco;
     margin-top: 30px;
@@ -359,6 +348,8 @@ textarea:focus {
 }
 
 @import "sobre";
+@import "menu";
+@import "header";
 @import "servicos";
 @import "servico";
 @import "contato";

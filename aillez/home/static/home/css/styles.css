@@ -117,16 +117,6 @@ textarea:focus {
   animation-fill-mode: both;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 1.5rem;
-}
-.header .header-logo {
-  display: block;
-  padding: 25px 33px;
-}
-
 .btn {
   color: #FFF;
   margin-top: 30px;
@@ -411,6 +401,81 @@ body {
   opacity: 0.2;
   font-style: normal;
   font-weight: normal;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  margin: auto;
+  width: 70px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  display: none;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 70px;
+  height: 5px;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(20px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 1.5rem;
+}
+.header .header-logo {
+  display: block;
+  padding: 25px 33px;
 }
 
 body {
