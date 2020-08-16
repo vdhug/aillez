@@ -1077,7 +1077,6 @@ body {
   }
 
   .menu-mobile {
-    display: block;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -1136,6 +1135,34 @@ body {
   }
   .home-servicos .descricao p {
     margin-top: 0;
+  }
+
+  .sobre-interna .sobre-titulo {
+    padding: 2rem 1.5rem;
+  }
+  .sobre-interna .sobre-titulo h1 {
+    font-size: 1.953rem;
+  }
+  .sobre-interna .sobre-descricao {
+    padding: 2rem 1.5rem;
+  }
+  .sobre-interna .sobre-valor {
+    padding: 2rem 1.5rem;
+  }
+  .sobre-interna .sobre-visao-geral {
+    padding: 0rem 1.5rem;
+    margin-top: 2rem;
+  }
+  .sobre-interna .sobre-visao-geral ul li {
+    min-height: 300px;
+  }
+  .sobre-interna .sobre-visao-geral ul li span {
+    margin-top: 4rem;
+    font-size: 3.052rem;
+  }
+  .sobre-interna .sobre-visao-geral ul li span i {
+    display: none;
+    font-size: 7.451rem;
   }
 
   .estudos-de-caso {
