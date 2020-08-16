@@ -1184,6 +1184,33 @@ body {
   .footer p {
     margin-top: -16px;
   }
+
+  .servicos-interna .servicos-intro {
+    padding: 2rem 1.5rem;
+  }
+  .servicos-interna .servicos-intro h2 {
+    font-size: 2.441rem;
+  }
+  .servicos-interna .servicos-lista {
+    padding: 2rem 1.5rem;
+  }
+  .servicos-interna .servicos-lista ul {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  .servicos-interna .servicos-lista ul li {
+    margin-bottom: 2rem;
+  }
+  .servicos-interna .servicos-lista ul .servico {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos-interna .servicos-lista ul .servico .servico-descricao {
+    padding: 2rem 1.5rem;
+  }
+  .servicos-interna .servicos-lista .titulo {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

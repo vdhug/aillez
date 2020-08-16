@@ -288,4 +288,42 @@
             margin-top: -16px;
         }
     }
+
+    .servicos-interna {
+        .servicos-intro {
+            padding: 2rem 1.5rem;
+
+            h2 {
+                font-size: 2.441rem;
+            }
+        }
+
+        .servicos-lista {
+            padding: 2rem 1.5rem;
+
+            ul {
+                flex-direction: column;
+                margin-bottom: 0rem;
+
+                li {
+                    margin-bottom: 2rem;
+                }
+
+                .servico {
+                    display: flex;
+                    flex-direction: column;
+
+                    .servico-descricao {
+                        padding: 2rem 1.5rem;
+                    }
+                }
+
+
+            }
+
+            .titulo {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }
