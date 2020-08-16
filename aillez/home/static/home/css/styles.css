@@ -1235,6 +1235,46 @@ body {
     font-size: 1.953rem;
     margin-bottom: 1.5rem;
   }
+
+  .contato-interna .contato {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .contato-interna .contato h2 {
+    font-size: 2.441rem;
+    margin-bottom: 2rem;
+  }
+  .contato-interna .contato .contato-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .contato-interna .contato .contato-info .contato-endereco {
+    margin-bottom: 2rem;
+  }
+  .contato-interna .contato .contato-info .contato-endereco .label {
+    margin-bottom: 0.5rem;
+  }
+  .contato-interna .contato .contato-info .contato-detalhes .label {
+    margin-bottom: 0.5rem;
+  }
+  .contato-interna .contato-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    row-gap: 1.5rem;
+  }
+  .contato-interna .contato-formulario h3 {
+    margin-bottom: 2rem;
+  }
+  .contato-interna .contato-formulario p {
+    font-size: 1.563rem;
+    margin-bottom: 2rem;
+  }
+  .contato-interna .contato-formulario .btn {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
