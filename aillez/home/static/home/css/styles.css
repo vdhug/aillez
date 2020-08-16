@@ -1047,6 +1047,14 @@ body {
     font-size: 2.441rem;
   }
 
+  .titulo-label {
+    margin-bottom: 2rem;
+  }
+
+  .footer .menu-footer {
+    display: none;
+  }
+
   .btn {
     padding: 1.5rem;
   }
@@ -1056,12 +1064,10 @@ body {
     flex-direction: row-reverse;
     align-items: center;
   }
-
-  .menu-wrapper {
+  .header .menu-wrapper {
     display: block;
   }
-
-  .menu {
+  .header .menu {
     display: none;
   }
 
@@ -1099,6 +1105,57 @@ body {
     padding-bottom: calc(0.56818vw + 8.18182px);
     font-size: calc(3.18182vw + 21.81818px);
     text-transform: capitalize;
+  }
+
+  .home-sobre {
+    grid-template-columns: 1fr;
+  }
+  .home-sobre .sobre-empresa {
+    padding: 2rem 1.5rem;
+  }
+  .home-sobre .sobre-empresa h2 {
+    font-size: 1.563rem;
+  }
+  .home-sobre .realizacoes {
+    padding: 2rem 1.5rem;
+  }
+  .home-sobre .realizacoes h5 {
+    font-size: 1.563rem;
+  }
+
+  .home-servicos {
+    padding: 2rem 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .home-servicos .introducao h1 {
+    font-size: 2.441rem;
+    margin-bottom: 2rem;
+  }
+  .home-servicos .introducao img {
+    display: none;
+  }
+  .home-servicos .descricao p {
+    margin-top: 0;
+  }
+
+  .estudos-de-caso {
+    padding: 2rem 1.5rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+  .estudos-de-caso div h1 {
+    font-size: 2.441rem;
+    margin-bottom: 2rem;
+  }
+  .estudos-de-caso div p {
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+  .footer p {
+    margin-top: -16px;
   }
 }
 

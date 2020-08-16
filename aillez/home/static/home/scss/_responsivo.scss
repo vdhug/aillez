@@ -118,6 +118,16 @@
         }
     }
 
+    .titulo-label {
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        .menu-footer {
+            display: none;
+        }
+    }
+
     .btn {
         padding: 1.5rem;
     }
@@ -126,19 +136,18 @@
         height: 100px;
         flex-direction: row-reverse;
         align-items: center;
-    }
-
-    .menu-wrapper {
-        display: block;
-    }
-
-    .menu {
-    display: none;
+        .menu-wrapper {
+            display: block;
+        }
+    
+        .menu {
+            display: none;
+        }
     }
     
     .menu-mobile.active {
-    display: block;
-    opacity: 1;
+        display: block;
+        opacity: 1;
     }
 
     .menu-mobile {
@@ -173,6 +182,72 @@
                 text-transform: capitalize;
             }
           }
+        }
+    }
+
+    .home-sobre {
+        grid-template-columns: 1fr;
+
+        .sobre-empresa {
+            padding: 2rem 1.5rem;
+
+            h2 {
+                font-size: 1.563rem;
+            }
+        }
+
+        .realizacoes {
+            padding: 2rem 1.5rem;
+
+            h5 {
+                font-size: 1.563rem;
+            }
+        }
+    }
+
+    .home-servicos {
+        padding: 2rem 1.5rem;
+        grid-template-columns: 1fr;
+
+        .introducao {
+            h1 {
+                font-size: 2.441rem;
+                margin-bottom: 2rem;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .descricao {
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .estudos-de-caso {
+        padding: 2rem 1.5rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+
+        div {
+            h1 {
+                font-size: 2.441rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .footer {
+        padding: 2rem 1.5rem;
+        p {
+            margin-top: -16px;
         }
     }
 }
