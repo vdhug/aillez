@@ -1038,5 +1038,17 @@ body {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .home-intro {
+    min-height: 70vh;
+  }
+  .home-intro .titulo {
+    font-size: 2.441rem;
+  }
+
+  .btn {
+    padding: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
