@@ -1211,6 +1211,30 @@ body {
   .servicos-interna .servicos-lista .titulo {
     margin-bottom: 2rem;
   }
+
+  .estudos-de-caso-interna {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  .estudos-de-caso-interna h1 {
+    font-size: 2.441rem;
+  }
+  .estudos-de-caso-interna .custom-select {
+    width: 100%;
+    padding: 1.2rem 1rem;
+  }
+  .estudos-de-caso-interna .estudos {
+    display: flex;
+    flex-direction: column;
+  }
+  .estudos-de-caso-interna .estudos .estudo-descricao {
+    padding: 2rem 1.5rem;
+  }
+  .estudos-de-caso-interna .estudos .estudo-descricao h3 {
+    font-size: 1.953rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
