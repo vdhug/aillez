@@ -118,15 +118,40 @@ textarea:focus {
 }
 
 .btn {
-  color: #FFF;
+  color: #E9634F;
   margin-top: 30px;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: #E9634F;
   display: inline-block;
   padding: 25px 30px;
   border-radius: 48px;
+  border: 4px solid #E9634F;
+  font-weight: bold;
+  background: -webkit-linear-gradient(0deg, transparent 50%, #E9634F 50%);
+  background-size: 600px 80px;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  color: #FFF;
+  background-position: 300px 0;
+}
+
+.button {
+  color: #E9634F;
+  margin-top: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 25px 30px;
+  border-radius: 48px;
+}
+
+.button:hover {
+  color: #FFF;
+  background-position: 200px 0;
 }
 
 .menu ul {

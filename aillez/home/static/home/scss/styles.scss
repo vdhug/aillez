@@ -105,15 +105,43 @@ textarea:focus {
 }
 
 .btn {
-    color: $branco;
+    color: $rosa;
     margin-top: 30px;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: $rosa;
     display: inline-block;
     padding: 25px 30px;
     border-radius: 48px;
+    border: 4px solid $rosa;
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, transparent 50%, $rosa 50%);
+    background-size: 600px 80px;
+    transition: .8s;
+}
+
+.btn:hover {
+    color: $branco;
+    background-position: 300px 0;
+}
+
+
+.button {
+    color: $rosa;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    display: inline-block;
+    padding: 25px 30px;
+    border-radius: 48px;
+    
+    
+}
+
+.button:hover {
+    color: $branco;
+    background-position: 200px 0;
 }
 
 .menu {
