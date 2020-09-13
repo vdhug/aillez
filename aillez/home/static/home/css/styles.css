@@ -437,8 +437,8 @@ body {
 }
 
 .menu-wrapper {
-  width: 70px;
-  height: 45px;
+  width: 32px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -449,13 +449,13 @@ body {
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {
-  width: 70px;
-  height: 5px;
+  width: 32px;
+  height: 4px;
 }
 
 .hamburger-menu {
   position: relative;
-  transform: translateY(20px);
+  transform: translateY(10px);
   background: #1E1F23;
   transition: all 0ms 300ms;
 }
@@ -467,7 +467,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 10px;
   background: #1E1F23;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -476,7 +476,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 10px;
   background: #1E1F23;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -1065,7 +1065,7 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .home-intro {
-    min-height: 70vh;
+    min-height: 40vh;
   }
   .home-intro .titulo {
     font-size: 2.441rem;
@@ -1080,7 +1080,7 @@ body {
   }
 
   .btn {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .header {
@@ -1093,6 +1093,11 @@ body {
   }
   .header .menu {
     display: none;
+  }
+
+  .menu .menu-link {
+    padding: 10px 0;
+    margin-bottom: 5px;
   }
 
   .menu-mobile.active {
@@ -1296,6 +1301,10 @@ body {
   .contato-interna .contato-formulario .btn {
     margin-top: 1rem;
     align-self: flex-end;
+  }
+
+  .btn {
+    margin-top: 15px;
   }
 }
 

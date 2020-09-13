@@ -112,7 +112,7 @@
 // Mobile
 @media only screen and (max-width: 767px) {
     .home-intro {
-        min-height: 70vh;
+        min-height: 40vh;
 
         .titulo {
             font-size: 2.441rem;
@@ -130,7 +130,7 @@
     }
 
     .btn {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .header {
@@ -143,6 +143,13 @@
     
         .menu {
             display: none;
+        }
+    }
+
+    .menu {
+        .menu-link {
+            padding: 10px 0;
+            margin-bottom: 5px;
         }
     }
     
@@ -406,5 +413,9 @@
                 align-self: flex-end;
             }
         }
+    }
+
+    .btn {
+        margin-top: 15px;
     }
 }
