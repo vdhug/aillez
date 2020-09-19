@@ -1,9 +1,11 @@
+from .models import PaginaHome
 from django.shortcuts import render
 
 
 # Create your views here.
 def index(request):
-    return render(request, "home/index.html")
+    home_info = PaginaHome.objects.all().first()
+    return render(request, "home/index.html", {'home_info': home_info})
 
 
 def sobre(request):

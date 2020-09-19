@@ -18,20 +18,15 @@
     <!-- PARA OUTDOOR -->
     <!-- O futuro é renovável -->
     <!-- Economizar energia economiza seu dinheiro -->
-    <h1 class="titulo">Aillez: qualidade, confiança, economia.</h1>
+    <h1 class="titulo">{{home_info.slogan}}</h1>
     <a class="btn" href="#">Descobrir</a>
 </section>
 
 <section class="home-sobre">
     <div class="sobre-empresa">
         <h3 class="titulo-label">Sobre nós</h3>
-        <h2>Aillez mantém uma força de trabalho altamente treinada, qualificada e experiente, comprometida com a excelência e a satisfação do cliente.</h2>
-        <p>
-            Fornecemos soluções de engenharia eficientes e baseadas em valor para a indústria da construção.
-        </p>
-        <p>
-            Segurança e inovação estão no centro de tudo o que fazemos, juntamente com uma atitude de "poder fazer" e atenção pessoal às necessidades do cliente.
-        </p>
+        <h2>{{home_info.sobre_titulo}}</h2>
+        <p>{{home_info.sobre_descricao}}</p>
         <ul class="menu">
             <li><a class="menu-link" href="#">Nossos valores</a></li>
             <li><a class="menu-link" href="#">Nossas capacidades</a></li>
@@ -41,7 +36,7 @@
 
     <div class="realizacoes">
         <h3 class="titulo-label">Por que trabalhar conosco</h3>
-        <img class="realizacoes-icone" src="#" alt="">
+        <img class="realizacoes-icone" src="{{home_info.sobre_time.url}}" alt="">
         <h5>Equipe altamente capacitada, capaz de gerar soluçoes alternativas e inovadoras.</h5>
     </div>
 </section>
