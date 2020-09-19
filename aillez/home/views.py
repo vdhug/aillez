@@ -7,11 +7,6 @@ def index(request):
     home_info = PaginaHome.objects.all().first()
     return render(request, "home/index.html", {'home_info': home_info})
 
-
-def sobre(request):
-    return render(request, "sobre/sobre.html")
-
-
 def servicos(request):
     return render(request, "servicos/servicos.html")
 

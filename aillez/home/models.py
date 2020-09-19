@@ -60,3 +60,7 @@ class EstudoDeCaso(models.Model):
     breve_descricao = models.TextField(verbose_name="Breve descrição do serviço realizado")
     imagem = models.ImageField(
         upload_to='uploads/estudos/%Y/%m/', verbose_name="Foto de divulgação do serviço (650x500)", default="")
+
+
+class Paragrafo(models.Model):
+    texto = models.TextField(verbose_name="Texto do parágrafo")
