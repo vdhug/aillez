@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from .models import PaginaHome
 
-# Register your models here.
+
 class PaginaHomeAdmin(admin.ModelAdmin):
     exclude = (["title"])
     fields = ["slogan", "sobre_titulo", "sobre_descricao", "sobre_time"]

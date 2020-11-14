@@ -26,7 +26,7 @@
     <div class="sobre-empresa">
         <h3 class="titulo-label">Sobre nós</h3>
         <h2>{{home_info.sobre_titulo}}</h2>
-        <p>{{home_info.sobre_descricao}}</p>
+        <p>{{home_info.sobre_descricao | safe }}</p>
         <ul class="menu">
             <li><a class="menu-link" href="#">Nossos valores</a></li>
             <li><a class="menu-link" href="#">Nossas capacidades</a></li>

@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 
 class PaginaHome(models.Model):
@@ -7,7 +8,7 @@ class PaginaHome(models.Model):
     slogan = models.CharField(max_length=160,  verbose_name="Slogan da empresa")
 
     sobre_titulo = models.CharField(max_length=160,  verbose_name="Sobre titulo")
-    sobre_descricao = models.TextField(verbose_name="Sobre descrição")
+    sobre_descricao = RichTextField(blank=True, null=True, verbose_name='Sobre descrição')
     sobre_time = models.ImageField(
         upload_to='uploads/home/%Y/%m/', verbose_name="Foto do time divulgação (100x100)", default="")
 
@@ -60,7 +61,3 @@ class EstudoDeCaso(models.Model):
     breve_descricao = models.TextField(verbose_name="Breve descrição do serviço realizado")
     imagem = models.ImageField(
         upload_to='uploads/estudos/%Y/%m/', verbose_name="Foto de divulgação do serviço (650x500)", default="")
-
-
-class Paragrafo(models.Model):
-    texto = models.TextField(verbose_name="Texto do parágrafo")
