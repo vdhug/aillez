@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from .models import Sobre
 
 # Create your views here.
 def sobre(request):
-    return render(request, "sobre/sobre.html")
+    sobre = Sobre.objects.all().first()
+    context = {
+        "sobre": sobre
+    }
+    return render(request, "sobre/sobre.html", context)

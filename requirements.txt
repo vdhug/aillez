@@ -1,2 +1,4 @@
 Django==2.0
 Pillow
+psycopg2
+django-ckeditor
