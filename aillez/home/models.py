@@ -48,13 +48,6 @@ class PaginaContato(models.Model):
         upload_to='uploads/servicos/%Y/%m/', verbose_name="Foto de divulgação do serviço (650x400)", default="")
 
 
-class Servico(models.Model):
-    titulo = models.CharField(max_length=160,  verbose_name="Título do serviço")
-    descricao = models.TextField(verbose_name="Descrição do serviço")
-    imagem = models.ImageField(
-        upload_to='uploads/servicos/%Y/%m/', verbose_name="Foto de divulgação do serviço (400x350)", default="")
-
-
 class EstudoDeCaso(models.Model):
     titulo = models.CharField(max_length=160,  verbose_name="Título do serviço")
     trabalho_realizado = models.TextField(verbose_name="Trabalho realizado")

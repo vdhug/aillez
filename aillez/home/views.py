@@ -8,10 +8,6 @@ def index(request):
     return render(request, "home/index.html", {'home_info': home_info})
 
 
-def servico(request, slug):
-    return render(request, "servicos/servico.html")
-
-
 def contato(request):
     return render(request, "contato/contato.html")
 

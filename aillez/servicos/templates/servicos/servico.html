@@ -10,18 +10,10 @@
 
 <section class="servico">
     <div class="servico-intro">
-        <h1>Instalaçao de paineis solares</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos corrupti nulla placeat totam natus. A facere laborum quia autem dolor possimus fuga corporis velit. Ab labore assumenda odio quaerat doloremque.</h3>
+        <h1>{{servico.nome}}</h1>
+        <h3>{{servico.breve_descricao}}</h3>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste nemo cum fugiat mollitia eius delectus, aut nobis, natus, sunt nostrum beatae blanditiis voluptatibus architecto deleniti inventore similique asperiores ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At molestiae debitis, quod amet nihil asperiores. Quod voluptas nihil in exercitationem, necessitatibus nostrum officiis mollitia deleniti minus sit harum soluta aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis mollitia, distinctio harum cupiditate labore aliquid, debitis libero cum saepe dolore laborum veritatis odio culpa quam? Laudantium delectus repellat aliquam minus.</p>
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
+        {{servico.descricao_detalhada | safe }}
 
         <a class="btn" href="">Contato</a>
 
