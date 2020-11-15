@@ -376,10 +376,10 @@ textarea:focus {
 }
 
 @import "../../../../sobre/static/sobre/scss/sobre";
+@import "../../../../servicos/static/servicos/scss/servicos";
+@import "../../../../servicos/static/servicos/scss/servico";
 @import "menu";
 @import "header";
-@import "servicos";
-@import "servico";
 @import "contato";
 @import "estudos";
 @import "responsivo";
