@@ -10,7 +10,3 @@ def index(request):
 
 def contato(request):
     return render(request, "contato/contato.html")
-
-
-def estudos(request):
-    return render(request, "estudos/estudos.html")
