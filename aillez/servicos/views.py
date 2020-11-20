@@ -3,7 +3,11 @@ from django.shortcuts import render
 
 # Create your views here.
 def servicos(request):
-    return render(request, "servicos/servicos.html")
+    servicos = Servico.objects.all()
+    context = {
+        "servicos": servicos
+    }
+    return render(request, "servicos/servicos.html", context)
 
 
 def servico(request, slug):

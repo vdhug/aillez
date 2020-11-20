@@ -9,7 +9,8 @@ class Servico(models.Model):
     servico_imagem = models.ImageField(
         upload_to='uploads/servicos/%Y/%m/', verbose_name="Imagem do serviço (630X550)", default="")
 
-
-
     class Meta:
         verbose_name_plural = "Serviços oferecidos"
+    
+    def __str__(self) -> str:
+        return f"{self.nome}"

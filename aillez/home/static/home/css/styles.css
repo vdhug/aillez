@@ -522,16 +522,18 @@ body {
   color: #E9634F;
   font-weight: bold;
 }
-.servicos-interna .servicos-lista ul .servico img {
+.servicos-interna .servicos-lista ul .servico .servico-imagem {
   grid-area: direita;
   background: grey;
+  width: 100%;
 }
 .servicos-interna .servicos-lista ul li:nth-child(2) .servico-descricao {
   grid-area: direita;
 }
-.servicos-interna .servicos-lista ul li:nth-child(2) img {
+.servicos-interna .servicos-lista ul li:nth-child(2) .servico-imagem {
   grid-area: esquerda;
   background: grey;
+  width: 100%;
 }
 
 body {

@@ -102,9 +102,10 @@
                     }
                 }
 
-                img {
+                .servico-imagem {
                     grid-area: direita;
                     background: grey;
+                    width: 100%;
                 }
             }
 
@@ -113,9 +114,10 @@
                     grid-area: direita;
                 }
 
-                img {
+                .servico-imagem {
                     grid-area: esquerda;
                     background: grey;
+                    width: 100%;
                 }
             }
         }
