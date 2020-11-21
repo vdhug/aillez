@@ -1,0 +1,99 @@
+@import "../../../../home/static/home/scss/cores";
+
+.estudo {
+    display: grid;
+    padding: 0rem 0rem;
+    grid-template: "estudoBody estudoImagem"
+    "estudoDepoimento estudoDepoimento" / 6fr 4fr;
+    position: relative;
+
+    .estudo-body {
+        grid-area: estudoBody;
+        padding: 0rem 9rem 3.5rem 6.5rem;
+
+        .btn-voltar {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-top: 4rem;
+            color: $pretoSecundario;
+            letter-spacing: 0.18rem;
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+
+        .estudo-descricao {
+            margin-bottom: 6rem;
+        }
+
+        h1 {
+            font-size: 4.768rem;
+            font-weight: bold;
+            color: #4D4D4D;
+            opacity: 0.9;
+            line-height: 1;
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            font-size: 2.441rem;
+            color: $pretoPrincipal;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .estudo-imagem-wrapper {
+        position: relative;
+        grid-area: estudoImagem;
+        img {
+            background: #4D4D4D;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            z-index: -1;
+        }
+    }
+
+    .estudo-depoimento {
+        grid-area: estudoDepoimento;
+        background: $pretoSecundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h3 {
+            color: $branco;
+            padding-top: 2rem;
+            opacity: .6;
+            letter-spacing: .15rem;
+            text-transform: uppercase;
+            padding-bottom: 8rem;
+        }
+
+        cite {
+            max-width: 1040px;
+            font-size: 1.563em;
+            color: $branco;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $rosa;
+            font-size: 1.25rem;
+            margin-bottom: 10rem;
+        }
+    }
+
+    
+}

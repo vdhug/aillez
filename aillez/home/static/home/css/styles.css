@@ -778,6 +778,94 @@ body {
   color: #1E1F23;
 }
 
+.estudo {
+  display: grid;
+  padding: 0rem 0rem;
+  grid-template: "estudoBody estudoImagem" "estudoDepoimento estudoDepoimento"/6fr 4fr;
+  position: relative;
+}
+.estudo .estudo-body {
+  grid-area: estudoBody;
+  padding: 0rem 9rem 3.5rem 6.5rem;
+}
+.estudo .estudo-body .btn-voltar {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  color: #4D4D4D;
+  letter-spacing: 0.18rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.estudo .estudo-body .estudo-descricao {
+  margin-bottom: 6rem;
+}
+.estudo .estudo-body h1 {
+  font-size: 4.768rem;
+  font-weight: bold;
+  color: #4D4D4D;
+  opacity: 0.9;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.estudo .estudo-body h3 {
+  font-size: 2.441rem;
+  color: #1E1F23;
+  margin-bottom: 2rem;
+}
+.estudo .estudo-body p {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.estudo .estudo-imagem-wrapper {
+  position: relative;
+  grid-area: estudoImagem;
+}
+.estudo .estudo-imagem-wrapper img {
+  background: #4D4D4D;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+}
+.estudo .estudo-depoimento {
+  grid-area: estudoDepoimento;
+  background: #4D4D4D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.estudo .estudo-depoimento h3 {
+  color: #FFF;
+  padding-top: 2rem;
+  opacity: 0.6;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  padding-bottom: 8rem;
+}
+.estudo .estudo-depoimento cite {
+  max-width: 1040px;
+  font-size: 1.563em;
+  color: #FFF;
+  font-style: normal;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.estudo .estudo-depoimento p {
+  color: #E9634F;
+  font-size: 1.25rem;
+  margin-bottom: 10rem;
+}
+
+body {
+  color: #1E1F23;
+}
+
 .menu-mobile {
   display: none;
 }
@@ -839,10 +927,15 @@ body {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+body {
+  color: #1E1F23;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 0px 1.5rem;
+  background: #FFF;
 }
 .header .header-logo {
   display: block;

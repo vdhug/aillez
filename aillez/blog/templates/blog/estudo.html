@@ -1,0 +1,50 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Aillez Engenharia - Sobre a empresa
+{% endblock %}
+
+
+{% block content %}
+
+<section class="estudo">
+    <div class="estudo-body">
+        <a class="btn-voltar" href="#">Voltar para estudos de caso</a>
+        <h1>Brockley Whins Embankment Stabilisation</h1>
+        <label class="titulo-label" for="trabalho">Trabalho feito</label>
+        <h3>Instalaçao de painel solar</h3>
+
+        <label class="titulo-label" for="descricao">Breve descrição</label>
+        <p class="estudo-descricao">
+            A complex emergency embankment stabilisation scheme at Brockley Whins Station comprising a 15,000 tonne berm and a 13m long 9m span Multiplate Arch culvert extension.
+        </p>
+
+        <h4>Boldon Colliery, South Tyneside – LEN3 95m 0550yds to 95m 0660yds</h4>
+        <p>Located 300 metres west of Brockley Whins Metro Station on the Longlands, Eaglescliffe and Newcastle Line (LEN3), a 20 metre high embankment carries Metro and Network Rail passenger and freight services between South Hylton & Newcastle Airport.  At the centre of the site a twin bore masonry arch culvert (Bridge 282), carries the River Don beneath the embankment flowing northwards.
+
+            The track layout comprises of two tracks, the Up and Down lines, and due to deterioration in the track quality, a temporary speed restriction of 20mph has been imposed. The site has a long history of movement requiring various interventions over the years, including a concrete block retaining wall, sheet piles, soil nails, grouting and construction of a berm. All previous interventions had varying levels of success, but ultimately failed to halt ground movements.
+            
+            Network Rail’s Design Delivery Team designed a 15,000 tonne granular fill berm combined with new slope and toe drainage systems to counteract the deep seated failure through the embankment fill material.  Right at the centre of the repair was the twin bore masonry arch culvert, which needed to be extended by 13 metres downstream to accommodate the new shallower embankment profile created by the berm. </p>
+        
+            <h4>Stakeholders</h4>
+            <p>This complex project required additional land take to facilitate the repair, and had an impact on a number of other stakeholders to steer the project to a successful conclusion including Network Rail’s geotechnical, structures & drainage teams, South Tyneside Council, the Environment Agency, Natural England, Northumbrian Water, Nexus, the general public and our railway neighbours.  Regular two weekly meetings with key stakeholders was key to bringing all parties together and steering the project to a conclusion that was fit for all stakeholders. 
+
+                A 450mm combined sewer dissected the railway right through the proposed foundations for the culvert extension and berm construction, further constraining the design solution, which was under stringent time pressure to provide a prompt repair to relieve speed restrictions on the railway.  Following a review of several options, to avoid conflict with the combined sewer, we decided upon using a custom designed Multiplate Arch System designed and supplied by Asset International Structures. </p>
+
+        {{servico.descricao_detalhada | safe }}
+
+        <a class="btn" href="">Contato</a>
+    </div>
+    <div class="estudo-imagem-wrapper">
+        <img src="" alt="">
+    </div>
+
+    <div class="estudo-depoimento">
+        <h3>Depoimento do cliente</h3>
+        <cite>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi? At, quidem aspernatur delectus ducimus dignissimos reiciendis est commodi tenetur fugiat porro suscipit labore minima quasi natus totam dicta adipisci?"</cite>
+        <p>Dona Helena | Dona de um quarteirao</p>
+    </div>
+</section>
+
+{% endblock %}
