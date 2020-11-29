@@ -516,11 +516,7 @@ body {
   max-width: 400px;
 }
 .servicos-interna .servicos-lista ul .servico .servico-descricao .btn {
-  display: inline-block;
-  background: transparent;
   border: 3px solid #E9634F;
-  color: #E9634F;
-  font-weight: bold;
 }
 .servicos-interna .servicos-lista ul .servico .servico-imagem {
   grid-area: direita;
