@@ -11,8 +11,7 @@ def servicos(request):
 
 
 def servico(request, slug):
-    servico = Servico.objects.all().first()
-    print("in servico")
+    servico = Servico.objects.filter(slug=slug).first()
     context = {
         "servico": servico
     }

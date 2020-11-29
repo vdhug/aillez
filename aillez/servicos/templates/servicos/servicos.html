@@ -25,7 +25,7 @@
                         <div class="servico-descricao">
                             <h3>{{servico.nome}}</h3>
                             <p>{{servico.breve_descricao}}</p>
-                            <a class="btn" href="#">Saiba mais</a>
+                            <a class="btn" href="{% url 'servico' slug=servico.slug %}">Saiba mais</a>
                         </div>
                         <img class="servico-imagem" src="{{servico.servico_imagem.url}}" alt="">
                     </div>

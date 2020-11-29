@@ -8,6 +8,7 @@ from .models import Servico
 
 class ServicoAdmin(admin.ModelAdmin):
     # list_display = ["title"]
+    readonly_fields = ['slug']
     pass
 
 
