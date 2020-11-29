@@ -24,45 +24,21 @@
     </div>
 
     <ul class="estudos">
-        <li>
-            <div>
-                <div class="estudo-imagem"></div>
-                <div class="estudo-descricao">
-                    <h3>Dona Helena caso de uso</h3>
-                    <label class="titulo-label" for="#">Trabalho realizado</label>
-                    <p>Instalaçao de painel solar</p>
-                    <label class="titulo-label" for="#">Breve descrição</label>
-                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
-                    <a class="btn" href="#">Mais detalhes</a>
+        {% for estudo in estudos %}
+            <li>
+                <div>
+                    <div class="estudo-imagem"></div>
+                    <div class="estudo-descricao">
+                        <h3>{{estudo.nome}}</h3>
+                        <label class="titulo-label" for="#">Trabalho realizado</label>
+                        <p>{{estudo.trabalho_feito}}</p>
+                        <label class="titulo-label" for="#">Breve descrição</label>
+                        <p>{{estudo.breve_descricao}}</p>
+                        <a class="btn" href="{% url 'estudo' slug=estudo.slug %}">Mais detalhes</a>
+                    </div>
                 </div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div class="estudo-imagem"></div>
-                <div class="estudo-descricao">
-                    <h3>Dona Helena caso de uso</h3>
-                    <label class="titulo-label" for="#">Trabalho realizado</label>
-                    <p>Instalaçao de painel solar</p>
-                    <label class="titulo-label" for="#">Breve descrição</label>
-                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
-                    <a class="btn" href="#">Mais detalhes</a>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div class="estudo-imagem"></div>
-                <div class="estudo-descricao">
-                    <h3>Dona Helena caso de uso</h3>
-                    <label class="titulo-label" for="#">Trabalho realizado</label>
-                    <p>Instalaçao de painel solar</p>
-                    <label class="titulo-label" for="#">Breve descrição</label>
-                    <p>Instalaçao de painel solar para geraçao de energia elétrica para um quarteirão...</p>
-                    <a class="btn" href="#">Mais detalhes</a>
-                </div>
-            </div>
-        </li>
+            </li>
+        {% endfor %}
     </ul>
 </section>
 

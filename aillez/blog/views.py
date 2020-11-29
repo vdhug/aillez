@@ -1,8 +1,17 @@
+from .models import Estudo
 from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, "blog/estudos.html")
+    estudos = Estudo.objects.all()
+    context = {
+        "estudos": estudos
+    }
+    return render(request, "blog/estudos.html", context)
 
 def estudo(request, slug):
-    return render(request, "blog/estudo.html")
+    estudo = Estudo.objects.filter(slug=slug).first()
+    context = {
+        "estudo": estudo
+    }
+    return render(request, "blog/estudo.html", context)
